@@ -58,8 +58,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -139,7 +139,7 @@ Stock Photos
 ===============
 */
 .search {
-  padding: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -228,4 +228,8 @@ Stock Photos
 .loading {
   text-align: center;
   padding: 3rem;
+}
+.header {
+  padding-top: 3em;
+  margin-bottom: 0;
 }

@@ -77,30 +77,35 @@ function App() {
     }
   };
   return (
-    <main>
-      <section className="search">
-        <form className="search-form">
-          <input
-            type="text"
-            className="form-input"
-            placeholder="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-          <button type="submit" className="submit-btn" onClick={handleSubmit}>
-            <FaSearch />
-          </button>
-        </form>
-      </section>
-      <section className="photos">
-        <div className="photos-center">
-          {photos.map((image) => {
-            return <Photo key={image.id} {...image} />;
-          })}
-        </div>
-        {loading && <h2 className="loading">Loading...</h2>}
-      </section>
-    </main>
+    <>
+      <header className="search header">
+        <h1>stock photos</h1>
+      </header>
+      <main>
+        <section className="search">
+          <form className="search-form">
+            <input
+              type="text"
+              className="form-input"
+              placeholder="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <button type="submit" className="submit-btn" onClick={handleSubmit}>
+              <FaSearch />
+            </button>
+          </form>
+        </section>
+        <section className="photos">
+          <div className="photos-center">
+            {photos.map((image) => {
+              return <Photo key={image.id} {...image} />;
+            })}
+          </div>
+          {loading && <h2 className="loading">Loading...</h2>}
+        </section>
+      </main>
+    </>
   );
 }
 
